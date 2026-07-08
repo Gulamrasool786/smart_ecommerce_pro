@@ -1,0 +1,58 @@
+export const products = [
+  {
+    id: 1,
+    title: "Wireless Mouse",
+    price: 999,
+    stock: 5,
+    image: "https://m.media-amazon.com/images/I/71tqvuHgIlL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+  },
+  {
+    id: 2,
+    title: "Mechanical Keyboard",
+    price: 2499,
+    stock: 3,
+    image: "https://m.media-amazon.com/images/I/61fHEBY8IVL._AC_SX466_.jpg",
+  },
+  {
+    id: 3,
+    title: "Gaming Headphones",
+    price: 1999,
+    stock: 4,
+    image: "https://m.media-amazon.com/images/I/71CT4h6bDSL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+  },
+  {
+    id: 4,
+    title: "Smart Watch",
+    price: 3499,
+    stock: 2,
+    image: "https://m.media-amazon.com/images/I/71zBoAewXiL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+  },
+   {
+    id: 5,
+    title: "Wireless Mouse",
+    price: 999,
+    stock: 5,
+    image: "https://m.media-amazon.com/images/I/71tqvuHgIlL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+  },
+  {
+    id: 6,
+    title: "Mechanical Keyboard",
+    price: 2499,
+    stock: 3,
+    image: "https://m.media-amazon.com/images/I/61fHEBY8IVL._AC_SX466_.jpg",
+  },
+  {
+    id: 7,
+    title: "Gaming Headphones",
+    price: 1999,
+    stock: 4,
+    image: "https://m.media-amazon.com/images/I/71CT4h6bDSL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+  },
+  {
+    id: 8,
+    title: "Smart Watch",
+    price: 3499,
+    stock: 2,
+    image: "https://m.media-amazon.com/images/I/71zBoAewXiL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+  },
+];
