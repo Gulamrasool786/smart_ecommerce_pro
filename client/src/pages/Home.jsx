@@ -210,7 +210,7 @@ function Home() {
                 className="rounded-3xl border bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-black text-3xl shadow-md">
-                  {feature.icon}
+                  {Track}
                 </div>
 
                 <h3 className="mt-6 text-xl font-bold">{feature.title}</h3>
