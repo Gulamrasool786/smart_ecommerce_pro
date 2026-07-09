@@ -1,20 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Truck, Star, Lock} from "lucide-react";
+import { Truck, Star, Lock } from "lucide-react";
 
 function Home() {
   const features = [
     {
       title: "Fast Delivery",
       desc: "Quick and reliable delivery experience.",
+      icon: Truck,
     },
     {
       title: "Secure Payment",
-      desc: "Razorpay powered online payment."
+      desc: "Razorpay powered online payment.",
+      icon: Lock,
     },
     {
       title: "Premium Products",
       desc: "Curated products with quality focus.",
+      icon: Star,
     },
   ];
 
@@ -204,20 +207,24 @@ function Home() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
-            {features.map((feature) => (
-              <div
-                key={feature.title}
-                className="rounded-3xl border bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
-              >
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-black text-3xl shadow-md">
-                  {Track}
+            {features.map((feature) => {
+              const Icon = feature.icon;
+
+              return (
+                <div
+                  key={feature.title}
+                  className="rounded-3xl border bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+                >
+                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-black shadow-md">
+                    <Icon className="h-8 w-8 text-white" />
+                  </div>
+
+                  <h3 className="mt-6 text-xl font-bold">{feature.title}</h3>
+
+                  <p className="mt-3 text-gray-600">{feature.desc}</p>
                 </div>
-
-                <h3 className="mt-6 text-xl font-bold">{feature.title}</h3>
-
-                <p className="mt-3 text-gray-600">{feature.desc}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
