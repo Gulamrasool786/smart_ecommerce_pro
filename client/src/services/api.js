@@ -1,7 +1,11 @@
 import axios from "axios";
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL ||
+  "https://smart-ecommerce-backend-iml1.vercel.app/api";
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api",
+  baseURL: API_BASE_URL,
   headers: {
     "Content-Type": "application/json",
   },
@@ -26,9 +30,7 @@ api.interceptors.request.use(
 
     return config;
   },
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
 export default api;
